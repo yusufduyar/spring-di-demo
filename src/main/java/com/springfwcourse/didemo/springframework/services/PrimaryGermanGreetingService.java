@@ -6,10 +6,10 @@ import org.springframework.stereotype.Service;
 
 @Service
 @Primary
-@Profile({"en","default"})
-public class PrimaryGreetingService implements IGreetingService {
+@Profile("de")
+public class PrimaryGermanGreetingService implements IGreetingService {
     @Override
     public String sayGreeting() {
-        return "Hello - Primary greeting service";
+        return "Hallo vom deutschen Grußdienst.";
     }
 }
