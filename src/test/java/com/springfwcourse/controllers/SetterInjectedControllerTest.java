@@ -1,7 +1,7 @@
 package com.springfwcourse.controllers;
 
 import com.springfwcourse.didemo.springframework.controllers.SetterInjectedController;
-import com.springfwcourse.didemo.springframework.services.GreetingService;
+import com.springfwcourse.didemo.springframework.services.GreetingServiceImpl;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -13,11 +13,11 @@ public class SetterInjectedControllerTest {
     @Before
     public void setUp() throws Exception{
         this.setterInjectedController = new SetterInjectedController();
-        this.setterInjectedController.setGreetingService(new GreetingService());
+        this.setterInjectedController.setGreetingService(new GreetingServiceImpl());
     }
 
     @Test
     public void testGreeting() throws Exception{
-        assertEquals(GreetingService.HELLO_WORLD,setterInjectedController.sayHello());
+        assertEquals(GreetingServiceImpl.HELLO_WORLD,setterInjectedController.sayHello());
     }
 }
