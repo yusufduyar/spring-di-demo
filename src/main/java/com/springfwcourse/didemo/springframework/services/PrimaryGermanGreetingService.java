@@ -11,6 +11,10 @@ public class PrimaryGermanGreetingService implements IGreetingService {
 
     private IGreetingRepository greetingRepository;
 
+    public PrimaryGermanGreetingService(IGreetingRepository greetingRepository) {
+        this.greetingRepository = greetingRepository;
+    }
+
     @Override
     public String sayGreeting() {
        return greetingRepository.getGermanGreeting();

@@ -11,6 +11,10 @@ public class PrimaryTurkishGreetingService implements IGreetingService {
 
     private IGreetingRepository greetingRepository;
 
+    public PrimaryTurkishGreetingService(IGreetingRepository greetingRepository) {
+        this.greetingRepository = greetingRepository;
+    }
+
     @Override
     public String sayGreeting() {
         return greetingRepository.getTurkishGreeting();

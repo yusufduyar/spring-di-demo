@@ -1,5 +1,8 @@
 package com.springfwcourse.didemo.springframework.services;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class GreetingRepositoryImpl implements IGreetingRepository {
     @Override
     public String getEnglishGreeting() {
