@@ -1,6 +1,6 @@
 package com.springfwcourse.didemo.springframework.controllers;
 
-import com.springfwcourse.didemo.springframework.services.IGreetingService;
+import com.springfwcourse.services.IGreetingService;
 import org.springframework.stereotype.Controller;
 
 @Controller

@@ -1,4 +1,4 @@
-package com.springfwcourse.didemo.springframework.services;
+package com.springfwcourse.services;
 
 import org.springframework.context.annotation.Primary;
 import org.springframework.context.annotation.Profile;
@@ -6,17 +6,17 @@ import org.springframework.stereotype.Service;
 
 @Service
 @Primary
-@Profile({"en","default"})
-public class PrimaryGreetingService implements IGreetingService {
+@Profile("de")
+public class PrimaryGermanGreetingService implements IGreetingService {
 
     private IGreetingRepository greetingRepository;
 
-    public PrimaryGreetingService(IGreetingRepository greetingRepository) {
+    public PrimaryGermanGreetingService(IGreetingRepository greetingRepository) {
         this.greetingRepository = greetingRepository;
     }
 
     @Override
     public String sayGreeting() {
-        return greetingRepository.getEnglishGreeting();
+       return greetingRepository.getGermanGreeting();
     }
 }

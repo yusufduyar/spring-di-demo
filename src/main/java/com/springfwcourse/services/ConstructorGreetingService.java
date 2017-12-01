@@ -1,4 +1,4 @@
-package com.springfwcourse.didemo.springframework.services;
+package com.springfwcourse.services;
 
 import org.springframework.stereotype.Service;
 

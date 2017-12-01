@@ -1,4 +1,4 @@
-package com.springfwcourse.didemo.springframework.services;
+package com.springfwcourse.services;
 
 import org.springframework.context.annotation.Primary;
 import org.springframework.context.annotation.Profile;

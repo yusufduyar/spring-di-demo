@@ -1,4 +1,4 @@
-package com.springfwcourse.didemo.springframework.services;
+package com.springfwcourse.services;
 
 public interface IGreetingRepository {
     String getEnglishGreeting();

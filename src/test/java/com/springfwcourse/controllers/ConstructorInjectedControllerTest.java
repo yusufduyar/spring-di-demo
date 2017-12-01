@@ -1,7 +1,7 @@
 package com.springfwcourse.controllers;
 
 import com.springfwcourse.didemo.springframework.controllers.ConstructorInjectedController;
-import com.springfwcourse.didemo.springframework.services.GreetingServiceImpl;
+import com.springfwcourse.services.GreetingServiceImpl;
 import org.junit.Before;
 import org.junit.Test;
 

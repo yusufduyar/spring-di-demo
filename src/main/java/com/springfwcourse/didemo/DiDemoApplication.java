@@ -7,11 +7,13 @@ import com.springfwcourse.didemo.springframework.controllers.SetterInjectedContr
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.ComponentScan;
 import org.springframework.stereotype.Controller;
 
 import javax.naming.ldap.Control;
 
 @SpringBootApplication
+@ComponentScan(basePackages = {"com.springfwcourse.services","com.springfwcourse.didemo"})
 public class DiDemoApplication {
 
 	public static void main(String[] args) {
